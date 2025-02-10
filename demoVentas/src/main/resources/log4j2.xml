@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+	<Properties> 
+		<Property name="log-path">C:/MicroservicioPrueba/Ventas/log</Property>
+	</Properties>
+	<Appenders>
+		<RollingFile name="RollingFile" fileName="${log-path}\ventasPrueba.log" filePattern="${log-path}\ventasPrueba.log.%i" >
+			<PatternLayout>
+				<!--<pattern>%-5p %d{dd/MMM/yyyy HH:mm:ss,SSS} [%t] %c - %m%n</pattern>  -->
+				<pattern>[%d{yyyyMMddHHmmss.SSS}][%p][%c][%X{mdcData}][%M][%X{IP}]  - %m%n</pattern>				
+				
+			</PatternLayout>	
+			<Policies>
+				<SizeBasedTriggeringPolicy size="100MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="5"/>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="root" level="DEBUG" additivity="false" >
+			<appender-ref ref="RollingFile" level="debug" />
+		</Logger>
+
+	</Loggers>
+</Configuration>
