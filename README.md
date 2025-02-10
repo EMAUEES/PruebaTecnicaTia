@@ -1,6 +1,6 @@
 # PruebaTecnicaTia
 
-Ejecutar script para creacion de base de datos en SQLServer 
+Ejecutar script para creacion e insercion de base de datos en SQLServer 
 Microsoft SQL Server 2022 (RTM-GDR) (KB5046861) - 16.0.1135.2 (X64) Oct 18 2024 15:31:58 Copyright (C) 2022 Microsoft Corporation Express Edition (64-bit) on Windows 10 Pro 10.0 (Build 22631: ) (Hypervisor)
 
 IDE utilizado para el desarrollo del microservicio: spring-tool-suite-4-4.15.3.RELEASE
